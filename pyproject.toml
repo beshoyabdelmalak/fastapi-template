@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "fastapi-app"
+version = "0.0.1"
+description = ""
+authors = ["Beshoy <beshoyibraheem@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.1"
+sqlalchemy = "^2.0.21"
+uvicorn = "^0.23.2"
+pytest = "^7.4.2"
+slowapi = "^0.1.8"
+sqlmodel = "^0.0.16"
+pydantic-settings = "^2.2.1"
+requests = "^2.31.0"
+SQLAlchemy-Utils = "^0.41.1"
+httpx = "^0.27.0"
+requests-mock = "^1.11.0"
+
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.17.0"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+]
